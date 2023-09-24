@@ -4,6 +4,7 @@ import botNavLogo from "../../assets/logos/NewOPB_logo.png"
 
 const BotNavbar = () => {
 
+  // List of all of the directories with all of the categories of products
   const directory = [
     {
       name: "Blinds",
@@ -57,21 +58,28 @@ const BotNavbar = () => {
   return (
     <>
       <nav className="botNavbar">
+        {/* One Price Blinds Logo (image) */}
         <img className="botNavbar__logo" src={botNavLogo} alt="One Price Blinds Logo" />
 
+        {/* displays all directories */}
         <div className="botNavbar__navigation">
           {
             directory.map((item, index) =>
+              // checks if there is a dropdown that we need to create
               index < 5 ?
                 <div key={index}>
+                  {/* function call that creates dropdown menues per directory */}
                   <CreateCategory item={item} index={index} />
                 </div>
                 :
+                // if there wasnt a dropdown menu needed it creates a link to the page indicated
+                // =================================== add to link here =========================================
                 <Link to={`/${item.link}`} key={index} className="botNavbar__navigation--item--text">{item.name}</Link>
             )
           }
         </div>
 
+        {/* doing tommorow  */}
         <button>%phoneSvg% 775-460-0001</button>
         <p>%userSvg%</p>
         <p>%bagSvg%</p>
@@ -86,12 +94,16 @@ const CreateCategory = ({ item, index }) => {
   return (
     <>
       <div className="botNavbar__navigation--item" key={index}>
+        {/* makes the dropdown disapear */}
         <div onMouseLeave={() => setIsOpen(false)} className="botNavbar__navigation--item--text--wrapper">
+        {/* makes the dropdown appear */}
           <p onMouseOver={() => setIsOpen(true)} className="botNavbar__navigation--item--text">{item.name}</p>
 
           <ul className={`botNavbar__navigation__dropdown ${isOpen ? "botNavbar__navigation__dropdown--active" : "botNavbar__navigation__dropdown--inactive"}`}>
+            {/* shows all items within the dropdown menue */}
             {
               item.categories.map((product, x) =>
+              // =================================== add to link here =========================================
                 <Link key={x} className="botNavbar__navigation__dropdown--item--link" to={product.link}>
                   <li className="botNavbar__navigation__dropdown--item">
                     {product.name}
