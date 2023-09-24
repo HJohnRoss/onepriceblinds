@@ -1,0 +1,46 @@
+.topNavbar {
+  background-color: $color-primary;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+
+  &__socials {
+    display: flex;
+    list-style: none;
+
+    :not(:last-child) {
+      margin-right: 10px;
+    }
+
+    &--icon {
+      fill: $color-white;
+      mix-blend-mode: normal;
+      width: 1.7rem;
+      height: 1.7rem;
+      transition: all .3s;
+    }
+
+    &--icon:hover {
+      fill: $color-secondary;
+    }
+  }
+
+
+  &__link {
+    text-decoration: none;
+    color: $color-white;
+    font-weight: 700;
+    font-size: 1.4rem;
+    transition: all .3s;
+
+    &:hover {
+      color: $color-secondary;
+    }
+  }
+
+  &__invisible {
+    opacity: 0;
+    cursor: default;
+  }
+}
