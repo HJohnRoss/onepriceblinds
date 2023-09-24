@@ -6,6 +6,8 @@
 @import "./base/base";
 
 // importing components
+  // HomePage
+  @import "./components/HomePage/categories";
 
 // importing layouts
 @import "./layout/topNavbar";
