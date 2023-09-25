@@ -59,7 +59,9 @@ const BotNavbar = () => {
     <>
       <nav className="botNavbar">
         {/* One Price Blinds Logo (image) */}
-        <img className="botNavbar__logo" src={botNavLogo} alt="One Price Blinds Logo" />
+        <Link to="/">
+          <img className="botNavbar__logo" src={botNavLogo} alt="One Price Blinds Logo" />
+        </Link>
 
         {/* displays all directories */}
         <div className="botNavbar__navigation">
@@ -79,7 +81,7 @@ const BotNavbar = () => {
           }
         </div>
 
-        {/* doing tommorow  */}
+
         <div className="botNavbar__container">
           <Link to="tel:888-492-5463" className="botNavbar__container--phoneBtn">
             <svg className="botNavbar__container--phoneBtn--svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
