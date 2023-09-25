@@ -40,9 +40,12 @@
       }
 
       &--text {
-        margin-top: -5rem;
+        margin-top: -3rem;
         color: $color-primary;
-        padding: 3rem 6rem;
+        padding: 2rem 0 2rem 0;
+        width: 75%;
+        text-align: center;
+        white-space: nowrap;
         border-radius: 2rem;
         background-color: $color-offWhite;
       }

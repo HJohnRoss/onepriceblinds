@@ -10,7 +10,7 @@ const HomeBanner = () => {
 
       <div className="homeBanner__container">
         <div className="homeBanner__container--item">
-          <img className="homeBanner__container--item--img" src={Delivery} alt="Delivery Emoticon" />
+          <img className="homeBanner__container--item--img" src={Delivery} draggable="false" alt="Delivery Emoticon" />
           <p className="homeBanner__container--item--text">
             Superior
             <br />
@@ -19,7 +19,7 @@ const HomeBanner = () => {
         </div>
 
         <div className="homeBanner__container--item">
-          <img className="homeBanner__container--item--img" src={SaveMoney} alt="Saving Money Emoticon" />
+          <img className="homeBanner__container--item--img" src={SaveMoney} draggable="false" alt="Saving Money Emoticon" />
           <p className="homeBanner__container--item--text">
             Competitive
             <br />
@@ -28,9 +28,11 @@ const HomeBanner = () => {
         </div>
 
         <div className="homeBanner__container--item">
-          <img className="homeBanner__container--item--img" src={Sample} alt="Sample Emoticon" />
+          <img className="homeBanner__container--item--img" src={Sample} draggable="false" alt="Sample Emoticon" />
           <p className="homeBanner__container--item--text">
-            Always Free Sample
+            Always FREE
+            <br />
+            Sample
             <br />
             before you buy
           </p>

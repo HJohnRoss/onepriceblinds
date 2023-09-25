@@ -76,9 +76,12 @@ body {
   transform: translate(-1rem, -1rem);
 }
 .categories__container--card--text {
-  margin-top: -5rem;
+  margin-top: -3rem;
   color: #000080;
-  padding: 3rem 6rem;
+  padding: 2rem 0 2rem 0;
+  width: 75%;
+  text-align: center;
+  white-space: nowrap;
   border-radius: 2rem;
   background-color: #eee;
 }
@@ -160,6 +163,8 @@ body {
 .homeBanner__h2 {
   text-align: center;
   margin-bottom: 2rem;
+  font-weight: 700;
+  font-size: 2.8rem;
 }
 .homeBanner__container {
   display: flex;
@@ -174,8 +179,94 @@ body {
   width: 5rem;
 }
 .homeBanner__container--item--text {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 600;
+  line-height: 1.5rem;
+}
+
+.feedback {
+  color: #000080;
+  text-align: center;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(238, 238, 238, 0.2);
+}
+.feedback__header {
+  font-size: 2.4rem;
+  font-weight: 800;
+}
+.feedback__carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0 2rem 0 2rem;
+}
+.feedback__carousel--btn {
+  width: 4rem;
+  color: #FFB231;
+  height: 4rem;
+  border: 3px solid #FFB231;
+  border-radius: 50rem;
+  cursor: pointer;
+  background-color: transparent;
+}
+.feedback__carousel--btn--svg:focus {
+  outline: none;
+}
+.feedback__carousel--list {
+  list-style: none;
+  background-color: #FFFFFF;
+  padding: 2rem;
+}
+.feedback__carousel--slide {
+  width: 50vw;
+  height: 10rem;
+}
+.feedback__carousel--slide--text {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 3rem 0 3rem 0;
+  height: 30%;
+}
+.feedback__carousel--slide--container {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  text-align: start;
+}
+.feedback__carousel--slide--container--img {
+  height: 4rem;
+}
+.feedback__carousel--slide--container--buyer {
+  font-style: italic;
+  font-weight: 400;
+}
+.feedback__carousel--slide--container--buyer--name {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.feedback__currentSlide {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 5rem;
+}
+.feedback__currentSlide--hr {
+  width: 25px;
+  height: 0.5rem;
+  cursor: pointer;
+  border: none;
+  background-color: #808080;
+  border-radius: 1rem;
+}
+.feedback__currentSlide--hr--active {
+  color: #FFB231;
+  background-color: #FFB231;
 }
 
 .topNavbar {
